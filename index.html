@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kortvärde – Integritetspolicy</title>
+<style>
+  :root { --bg: #F3F4F6; --surface: #FFFFFF; --ink: #111827; --muted: #4B5563; --accent: #2B4FE0; --border: #E5E7EB; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1115; --surface: #171A21; --ink: #F3F4F6; --muted: #A1A7B3; --accent: #7D95FF; --border: #2A2F3A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--border); }
+  th { font-weight: 600; }
+  .lang { margin-bottom: 16px; font-size: 14px; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0; }
+  @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--border); padding: 10px 0; } td:first-child { font-weight: 600; } }
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="#english">English version below</a></p>
+<div class="card">
+<h1>Integritetspolicy för Kortvärde</h1>
+<p class="muted">Senast uppdaterad 2 november 2026</p>
+
+<p>Kortvärde är en app för att hålla koll på sin samling av Pokémonkort och vad korten är värda i kronor, baserat på avslutade försäljningar på Tradera. Den här policyn förklarar vilka uppgifter appen hanterar, varför, och vad du kan göra med dem.</p>
+
+<h2>Vem ansvarar för dina uppgifter</h2>
+<p>Personuppgiftsansvarig är Oliver Weberg, Sverige. Frågor om dina uppgifter skickar du till <a href="mailto:weberg.oliver@gmail.com">weberg.oliver@gmail.com</a>.</p>
+
+<h2>Kort sagt</h2>
+<ul>
+  <li>Du kan använda appen utan konto. Då sparas samlingen bara på din telefon.</li>
+  <li>Med konto sparas din e-postadress och din samling så att den finns kvar på alla dina telefoner.</li>
+  <li>Inga annonser, ingen spårning mellan appar och webbplatser, ingen analys av hur du använder appen och ingen försäljning av uppgifter.</li>
+  <li>Du kan radera ditt konto och allt i det direkt i appen, under Konto → Radera konto.</li>
+</ul>
+
+<h2>Uppgifter vi hanterar</h2>
+<table>
+<thead><tr><th>Uppgift</th><th>Varför</th><th>Hur länge</th></tr></thead>
+<tbody>
+<tr><td>E-postadress</td><td>För att logga in med en engångskod som skickas till e-posten, och för att kunna svara om du kontaktar oss.</td><td>Tills du raderar kontot.</td></tr>
+<tr><td>Konto-ID och inloggningsuppgifter</td><td>Ett slumpat ID som kopplar ihop ditt konto med din samling. Inloggningstjänsten sparar också när du loggade in och, av säkerhetsskäl, IP-adress i sina loggar.</td><td>Kontot: tills du raderar det. Loggar: enligt Supabase, normalt några dagar.</td></tr>
+<tr><td>Din samling</td><td>Kort, antal, variant, skick och, om du fyller i dem, pris du betalat, inköpsdatum och om kortet är köpt eller öppnat ur ett paket. Behövs för att visa samlingen och dess värde.</td><td>Tills du tar bort kortet eller raderar kontot.</td></tr>
+<tr><td>Namn för vänner</td><td>Namnet du själv väljer att visa för dina vänner i appen. Det kan vara ett smeknamn.</td><td>Tills du raderar kontot.</td></tr>
+<tr><td>Vänner och händelser</td><td>Vilka du blivit vän med (genom att skanna varandras QR-kod) och en lista över kort du lagt till eller tagit bort, som dina vänner kan se. Dina vänner ser aldrig vad du betalat eller när du köpte ett kort.</td><td>Tills du tar bort vännen eller raderar kontot. Inbjudningskoder gäller i 10 minuter.</td></tr>
+<tr><td>Kameran</td><td>Används bara för att läsa en väns QR-kod. Bilden behandlas på telefonen och sparas eller skickas inte.</td><td>Sparas inte.</td></tr>
+<tr><td>Anrop till prisservern</td><td>När appen hämtar priser skickar den vilka kort den vill ha priser för. Servern sparar inte vem som frågade, och anropen kopplas inte till ditt konto.</td><td>Sparas inte.</td></tr>
+</tbody>
+</table>
+<p>Prisuppgifterna i appen kommer från avslutade annonser på Tradera. Vi sparar och visar aldrig köpares eller säljares namn, bara priser och annonsernas innehåll.</p>
+
+<h2>Rättslig grund</h2>
+<p>Vi behandlar uppgifterna för att kunna ge dig den tjänst du bett om när du skapar ett konto och använder appen (avtal, artikel 6.1 b i dataskyddsförordningen, GDPR). Inloggningsloggar sparas för att skydda tjänsten mot missbruk (berättigat intresse, artikel 6.1 f).</p>
+
+<h2>Vilka andra som hanterar uppgifterna</h2>
+<p>Vi säljer inte och delar inte dina uppgifter med någon för deras egna syften. Dessa leverantörer lagrar eller skickar uppgifter åt oss, enligt personuppgiftsbiträdesavtal:</p>
+<ul>
+  <li><strong>Supabase</strong> – konton, inloggning och sparade samlingar. Data lagras i Stockholm (EU). Supabase är ett amerikanskt företag; om uppgifter skulle föras över till USA sker det med EU-kommissionens standardavtalsklausuler.</li>
+  <li><strong>Hetzner Online</strong> (Tyskland/Finland) – servern som räknar fram och skickar priser till appen.</li>
+  <li><strong>E-postleverantören</strong> som skickar inloggningskoden ([Supabase / Resend]).</li>
+</ul>
+<p>Kortbilderna i appen hämtas direkt från bildtjänster för Pokémonkort (images.pokemontcg.io) och från Tradera. Precis som när du besöker en webbplats ser de din telefons IP-adress, men de får inga uppgifter om dig eller din samling.</p>
+<p>Om du testar appen via Apples TestFlight samlar Apple in vissa uppgifter enligt Apples egna villkor, till exempel kraschrapporter och feedback du skickar.</p>
+
+<h2>Dina rättigheter</h2>
+<p>Du har rätt att få veta vilka uppgifter vi har om dig, få fel rättade, få uppgifterna raderade, få ut dem i ett maskinläsbart format, och invända mot behandlingen. Det mesta kan du göra själv i appen: ändra eller ta bort kort, ta bort vänner och radera kontot. För övrigt, mejla <a href="mailto:[KONTAKT-EPOST]">[KONTAKT-EPOST]</a> så svarar vi inom en månad.</p>
+<p>När du raderar kontot tas kontot, samlingen, ditt namn, dina vänskaper och händelser bort direkt. Kopior kan finnas kvar i leverantörens säkerhetskopior i högst 30 dagar innan de skrivs över.</p>
+<p>Om du tycker att vi hanterar dina uppgifter fel kan du klaga hos Integritetsskyddsmyndigheten, <a href="https://www.imy.se">imy.se</a>.</p>
+
+<h2>Barn</h2>
+<p>Kortvärde är till för personer från 13 år. Är du yngre, be en förälder om hjälp innan du skapar ett konto.</p>
+
+<h2>Ändringar</h2>
+<p>Om policyn ändras uppdaterar vi den här sidan och datumet högst upp. Vid större ändringar säger vi till i appen.</p>
+</div>
+
+<hr id="english">
+
+<div class="card" lang="en">
+<h1>Kortvärde Privacy Policy</h1>
+<p class="muted">Last updated 2 November 2026</p>
+
+<p>Kortvärde is an app for keeping track of a Pokémon card collection and what the cards are worth in Swedish kronor, based on completed sales on Tradera. This policy explains what data the app handles, why, and what you can do about it.</p>
+
+<h2>Who is responsible</h2>
+<p>The data controller is Oliver Weberg, Sweden. Send questions about your data to <a href="mailto:weberg.oliver@gmail.com">weberg.oliver@gmail.com</a>.</p>
+
+<h2>In short</h2>
+<ul>
+  <li>You can use the app without an account. Your collection is then stored only on your phone.</li>
+  <li>With an account, your email address and collection are stored so they are available on all your phones.</li>
+  <li>No ads, no tracking across apps or websites, no usage analytics, and no selling of data.</li>
+  <li>You can delete your account and everything in it from inside the app: Konto → Radera konto.</li>
+</ul>
+
+<h2>Data we handle</h2>
+<table>
+<thead><tr><th>Data</th><th>Why</th><th>How long</th></tr></thead>
+<tbody>
+<tr><td>Email address</td><td>To sign in with a one-time code sent by email, and to reply if you contact us.</td><td>Until you delete the account.</td></tr>
+<tr><td>Account ID and sign-in data</td><td>A random ID that links your account to your collection. The sign-in service also records when you signed in and, for security, your IP address in its logs.</td><td>Account: until you delete it. Logs: per Supabase, normally a few days.</td></tr>
+<tr><td>Your collection</td><td>Cards, quantities, variant, condition and, if you enter them, price paid, purchase date and whether the card was bought or pulled from a pack. Needed to show your collection and its value.</td><td>Until you remove the card or delete the account.</td></tr>
+<tr><td>Name shown to friends</td><td>The name you choose to show your friends in the app. It can be a nickname.</td><td>Until you delete the account.</td></tr>
+<tr><td>Friends and activity</td><td>Who you are friends with (by scanning each other's QR code) and a list of cards you added or removed, which your friends can see. Friends never see what you paid or when you bought a card.</td><td>Until you remove the friend or delete the account. Invite codes expire after 10 minutes.</td></tr>
+<tr><td>Camera</td><td>Only used to read a friend's QR code. The image is processed on the phone and is not stored or sent.</td><td>Not stored.</td></tr>
+<tr><td>Requests to the price server</td><td>When the app fetches prices it sends which cards it wants prices for. The server does not store who asked, and requests are not linked to your account.</td><td>Not stored.</td></tr>
+</tbody>
+</table>
+<p>The price data comes from completed listings on Tradera. We never store or show buyers' or sellers' names, only prices and listing content.</p>
+
+<h2>Legal basis</h2>
+<p>We process the data to provide the service you asked for when you create an account and use the app (contract, Article 6(1)(b) GDPR). Sign-in logs are kept to protect the service against abuse (legitimate interest, Article 6(1)(f)).</p>
+
+<h2>Service providers</h2>
+<p>We do not sell your data or share it with anyone for their own purposes. These providers store or send data on our behalf, under data processing agreements:</p>
+<ul>
+  <li><strong>Supabase</strong> – accounts, sign-in and saved collections. Data is stored in Stockholm (EU). Supabase is a US company; any transfer to the US relies on the European Commission's Standard Contractual Clauses.</li>
+  <li><strong>Hetzner Online</strong> (Germany/Finland) – the server that computes prices and sends them to the app.</li>
+  <li><strong>The email provider</strong> that sends sign-in codes ([Supabase / Resend]).</li>
+</ul>
+<p>Card images are loaded directly from Pokémon card image services (images.pokemontcg.io) and from Tradera. As with visiting any website, they see your phone's IP address, but they receive no information about you or your collection.</p>
+<p>If you test the app through Apple's TestFlight, Apple collects some data under its own terms, such as crash reports and feedback you send.</p>
+
+<h2>Your rights</h2>
+<p>You have the right to know what data we hold about you, to have errors corrected, to have your data deleted, to receive it in a machine-readable format, and to object to processing. Most of this you can do yourself in the app: edit or remove cards, remove friends and delete your account. For anything else, email <a href="mailto:[KONTAKT-EPOST]">[KONTAKT-EPOST]</a> and we will reply within one month.</p>
+<p>When you delete your account, the account, collection, name, friendships and activity are removed immediately. Copies may remain in the provider's backups for up to 30 days before they are overwritten.</p>
+<p>If you think we handle your data wrongly, you can complain to the Swedish Authority for Privacy Protection (IMY), <a href="https://www.imy.se">imy.se</a>.</p>
+
+<h2>Children</h2>
+<p>Kortvärde is meant for people aged 13 and over. If you are younger, ask a parent for help before creating an account.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes we will update this page and the date at the top. For significant changes we will say so in the app.</p>
+</div>
+</main>
+</body>
+</html>
